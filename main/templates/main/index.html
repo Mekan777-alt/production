@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -27,26 +28,26 @@
 <meta name="twitter:image" content="http://www.themezinho.net/verno/preview.png">
 
 <!-- FAVICON FILES -->
-<link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
-<link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
-<link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
-<link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
-<link href="ico/favicon.png" rel="shortcut icon">
+<link href="{% static 'ico/apple-touch-icon-144-precomposed.png' %}" rel="apple-touch-icon" sizes="144x144">
+<link href="{% static 'ico/apple-touch-icon-114-precomposed.png' %}" rel="apple-touch-icon" sizes="114x114">
+<link href="{% static 'ico/apple-touch-icon-72-precomposed.png' %}" rel="apple-touch-icon" sizes="72x72">
+<link href="{% static 'ico/apple-touch-icon-57-precomposed.png' %}" rel="apple-touch-icon">
+<link href="{% static 'ico/favicon.png' %}" rel="shortcut icon">
 
 <!-- CSS FILES -->
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<link rel="stylesheet" href="css/fancybox.min.css">
-<link rel="stylesheet" href="css/odometer.min.css">
-<link rel="stylesheet" href="css/swiper.min.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/fancybox.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/odometer.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
 <div class="preloader">
   <div class="layer"></div>
   <div class="inner">
-    <figure> <img src="images/loading.gif" alt="Image"> </figure>
+    <figure> <img src="{% static 'images/loading.gif' %}" alt="Image"> </figure>
     <span class="typewriter" id="typewriter"></span> </div>
   <!-- end inner --> 
 </div>
@@ -64,21 +65,10 @@
       Kiev - Ukraine</p>
     </address>
     <ul>
-      <li><a href="#">HOME</a>
-      <ul>
-      	<li><a href="index.html">Slider</a></li>
-      	<li><a href="index-video-bg.html">Video BG</a></li>
-      	<li><a href="index-carousel.html">Carousel</a></li>
-      </ul>
+      <li><a href="index.html">HOME</a>
       </li>
-      <li><a href="verno.html">VERNO</a></li>
       <li><a href="#">WORKS</a>
-      <ul>
-      	<li><a href="works.html">3 Columns</a></li>
-      	<li><a href="works-2cols.html">2 Columns</a></li>
-      </ul>
       </li>
-      <li><a href="blog.html">BLOG</a></li>
       <li><a href="contact.html">CONTACT</a></li>
     </ul>
   </div>
@@ -91,7 +81,7 @@
 </div>
 <!-- end transition-overlay -->
 <nav class="navbar">
-  <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="Image"></a> </div>
+  <div class="logo"> <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="Image"></a> </div>
   <!-- end logo -->
   <div class="sandwich-nav">
     <div class="sandwich-text"><b>MENU<br>
@@ -144,7 +134,7 @@
          <div class="container">
           <h5 data-swiper-parallax="-200">Benefit from the <span>partial</span> uses</h5>
           <h2 data-swiper-parallax="-300">New Advance</h2>
-          <a href="videos/video.mp4" data-swiper-parallax="-100" class="btn-play" data-fancybox><img src="images/icon-play.svg" alt="Image"></a> 
+          <a href="{% static 'videos/video.mp4' %}" data-swiper-parallax="-100" class="btn-play" data-fancybox><img src="images/icon-play.svg" alt="Image"></a>
           </div>
           <!-- end container -->
           </div>
@@ -185,42 +175,42 @@
     <!-- end container -->
     <ul class="works-grid">
       <li class="wow fadeIn" data-wow-delay="0s">
-        <figure> <a href="works-single.html"><img src="images/works01.jpg" alt="Image"></a>
+        <figure> <a href="works-single.html"><img src="{% static 'images/works01.jpg' %}" alt="Image"></a>
           <figcaption> <span></span> <small>Mobile App & UI-UX Design</small>
             <h3>Start Engine</h3>
           </figcaption>
         </figure>
       </li>
       <li class="wow fadeIn" data-wow-delay="0.1s">
-        <figure> <a href="works-single.html"><img src="images/works02.jpg" alt="Image"></a>
+        <figure> <a href="works-single.html"><img src="{% static 'images/works02.jpg' %}" alt="Image"></a>
           <figcaption> <span></span> <small>Corporate website & e-Commerce</small>
             <h3>Kitchen</h3>
           </figcaption>
         </figure>
       </li>
       <li class="wow fadeIn" data-wow-delay="0.2s">
-        <figure> <a href="works-single.html"><img src="images/works03.jpg" alt="Image"></a>
+        <figure> <a href="works-single.html"><img src="{% static 'images/works03.jpg' %}" alt="Image"></a>
           <figcaption> <span></span> <small>UI-UX Design & Mobile App</small>
             <h3>Line Up</h3>
           </figcaption>
         </figure>
       </li>
       <li class="wow fadeIn" data-wow-delay="0s">
-        <figure> <a href="works-single.html"><img src="images/works04.jpg" alt="Image"></a>
+        <figure> <a href="works-single.html"><img src="{% static 'images/works04.jpg' %}" alt="Image"></a>
           <figcaption> <span></span> <small>Corporate website & Mobile App</small>
             <h3>Moviester</h3>
           </figcaption>
         </figure>
       </li>
       <li class="wow fadeIn" data-wow-delay="0.1s">
-        <figure> <a href="works-single.html"><img src="images/works05.jpg" alt="Image"></a>
+        <figure> <a href="works-single.html"><img src="{% static 'images/works05.jpg' %}" alt="Image"></a>
           <figcaption> <span></span> <small>Mobile App & Website</small>
             <h3>QBS Bank</h3>
           </figcaption>
         </figure>
       </li>
       <li class="wow fadeIn" data-wow-delay="0.2s">
-        <figure> <a href="works-single.html"><img src="images/works06.jpg" alt="Image"></a>
+        <figure> <a href="works-single.html"><img src="{% static 'images/works06.jpg' %}" alt="Image"></a>
           <figcaption> <span></span> <small>e-Commerce & UI UX Design</small>
             <h3>Eventer</h3>
           </figcaption>
@@ -249,17 +239,17 @@
 	  	<div class="col-lg-7 text-center">
 	  		<div class="row inner">
 	  			<div class="col-4 wow fadeIn">
-	  				<figure><img src="images/awards01.png" alt="Image"></figure>
+	  				<figure><img src="{% static 'images/awards01.png' %}" alt="Image"></figure>
 					<span class="odometer" id="1"></span><small>+</small>
 	  			</div>
 	  			<!-- end col-4 -->
 	  			<div class="col-4 wow fadeIn" data-wow-delay="0.1s">
-	  				<figure><img src="images/awards02.png" alt="Image"></figure>
+	  				<figure><img src="{% static 'images/awards02.png' %}" alt="Image"></figure>
 	  				<span class="odometer" id="2"></span><small>%</small>
 	  			</div>
 	  			<!-- end col-4 -->
 	  			<div class="col-4 wow fadeIn" data-wow-delay="0.2s">
-	  				<figure><img src="images/awards03.png" alt="Image"></figure>
+	  				<figure><img src="{% static 'images/awards03.png' %}" alt="Image"></figure>
 	  				<span class="odometer" id="3"></span><small>k</small>
 	  			</div>
 	  			<!-- end col-4 -->
@@ -280,28 +270,28 @@
   <!-- end awards -->
   <section class="icon-content-block">
     <div class="content-box wow fadeIn" data-wow-delay="0s">
-      <figure><img src="images/icon01.png" alt="Image"></figure>
+      <figure><img src="{% static 'images/icon01.png' %}" alt="Image"></figure>
       <h4>CMS Development</h4>
       <p>The slide out menu came to life right with as a popular option for mobile</p>
-      <a href="#"><img src="images/icon-dots.svg" alt="Image"></a> </div>
+      <a href="#"><img src="{% static 'images/icon-dots.svg' %}" alt="Image"></a> </div>
     <!-- end content-box -->
     <div class="content-box wow fadeIn" data-wow-delay="0.1s">
-      <figure><img src="images/icon02.png" alt="Image"></figure>
+      <figure><img src="{% static 'images/icon02.png' %}" alt="Image"></figure>
       <h4>Mobile Applications</h4>
       <p>The slide out menu came to life right with as a popular option for mobile</p>
-      <a href="#"><img src="images/icon-dots.svg" alt="Image"></a> </div>
+      <a href="#"><img src="{% static 'images/icon-dots.svg' %}" alt="Image"></a> </div>
     <!-- end content-box -->
     <div class="content-box wow fadeIn" data-wow-delay="0.2s">
-      <figure><img src="images/icon03.png" alt="Image"></figure>
+      <figure><img src="{% static 'images/icon03.png' %}" alt="Image"></figure>
       <h4>User Interface Designs</h4>
       <p>The slide out menu came to life right with as a popular option for mobile</p>
-      <a href="#"><img src="images/icon-dots.svg" alt="Image"></a> </div>
+      <a href="#"><img src="{% static 'images/icon-dots.svg' %}" alt="Image"></a> </div>
     <!-- end content-box -->
     <div class="content-box wow fadeIn" data-wow-delay="0.3s">
-      <figure><img src="images/icon04.png" alt="Image"></figure>
+      <figure><img src="{% static 'images/icon04.png' %}" alt="Image"></figure>
       <h4>Software Solutions</h4>
       <p>The slide out menu came to life right with as a popular option for mobile</p>
-      <a href="#"><img src="images/icon-dots.svg" alt="Image"></a> </div>
+      <a href="#"><img src="{% static 'images/icon-dots.svg' %}" alt="Image"></a> </div>
     <!-- end content-box --> 
   </section>
   <!-- end icon-content-block -->
@@ -311,47 +301,47 @@
       <h2>PARTNERS</h2>
       <ul>
         <li class="wow fadeIn" data-wow-delay="0s">
-          <figure><img src="images/logo01.png" alt="Image">
+          <figure><img src="{% static 'images/logo01.png' %}" alt="Image">
             <h6>Sleep In Genoa</h6>
           </figure>
         </li>
         <li class="wow fadeIn" data-wow-delay="0.1s">
-          <figure><img src="images/logo02.png" alt="Image">
+          <figure><img src="{% static 'images/logo02.png' %}" alt="Image">
             <h6>Korum</h6>
           </figure>
         </li>
         <li class="wow fadeIn" data-wow-delay="0.2s">
-          <figure><img src="images/logo03.png" alt="Image">
+          <figure><img src="{% static 'images/logo03.png' %}" alt="Image">
             <h6>Kura</h6>
           </figure>
         </li>
         <li class="wow fadeIn">
-          <figure><img src="images/logo04.png" alt="Image">
+          <figure><img src="{% static 'images/logo04.png' %}" alt="Image">
             <h6>Maison Rasmi</h6>
           </figure>
         </li>
         <li class="wow fadeIn">
-          <figure><img src="images/logo05.png" alt="Image">
+          <figure><img src="{% static 'images/logo05.png' %}" alt="Image">
             <h6>Melrose</h6>
           </figure>
         </li>
         <li class="wow fadeIn">
-          <figure><img src="images/logo06.png" alt="Image">
+          <figure><img src="{% static 'images/logo06.png' %}" alt="Image">
             <h6>Encore Autos</h6>
           </figure>
         </li>
         <li class="wow fadeIn">
-          <figure><img src="images/logo07.png" alt="Image">
+          <figure><img src="{% static 'images/logo07.png' %}" alt="Image">
             <h6>Market Trade</h6>
           </figure>
         </li>
         <li class="wow fadeIn">
-          <figure><img src="images/logo08.png" alt="Image">
+          <figure><img src="{% static 'images/logo08.png' %}" alt="Image">
             <h6>Medusis</h6>
           </figure>
         </li>
         <li class="wow fadeIn">
-          <figure><img src="images/logo09.png" alt="Image">
+          <figure><img src="{% static 'images/logo09.png' %}" alt="Image">
             <h6>Healty Habits</h6>
           </figure>
         </li>
@@ -398,19 +388,19 @@
   <!-- end sub-footer --> 
 </main>
 <!-- end main --> 
-<audio id="link" src="audio/link.mp3" preload="auto"></audio>
+<audio id="link" src="{% static 'audio/link.mp3' %}" preload="auto"></audio>
 
 <!-- JS FILES --> 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/swiper.min.js"></script> 
-<script src="js/jquery.stellar.js"></script> 
-<script src="js/isotope.min.js"></script> 
-<script src="js/imagesloaded.pkgd.min.js"></script> 
-<script src="js/jquery.typewriter.js"></script> 
-<script src="js/odometer.min.js"></script>  
-<script src="js/fancybox.min.js"></script> 
-<script src="js/wow.min.js"></script> 
-<script src="js/scripts.js"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/swiper.min.js' %}"></script>
+<script src="{% static 'js/jquery.stellar.js' %}"></script>
+<script src="{% static 'js/isotope.min.js' %}"></script>
+<script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'js/jquery.typewriter.js' %}"></script>
+<script src="{% static 'js/odometer.min.js' %}"></script>
+<script src="{% static 'js/fancybox.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/scripts.js' %}"></script>
 </body>
 </html>
